@@ -103,6 +103,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-color: var(--background-dark);
   bottom: 0;
   height: 4vh;
@@ -120,5 +121,45 @@ footer {
 .git-logo {
   width: 1.2rem;
   height: 1.2rem;
-  color:  white;
+  color: white;
+}
+
+.menu-container {
+  display: grid;
+  justify-items: center;
+  width: 60%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 216, 216);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.295);
+}
+
+.food-name {
+  padding: 2rem;
+}
+
+.food-image {
+  width: 90%;
+  height: auto;
+}
+
+.food-description {
+  width: 90%;
+  height: auto;
+  padding: 2rem 0 2rem 0;
+  justify-self: left;
 }
