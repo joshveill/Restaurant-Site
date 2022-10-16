@@ -1,0 +1,124 @@
+:root {
+  --font-color: #eee;
+  --font-color-dark: rgba(0, 0, 0, 0.85);
+  --background-light: rgba(198, 164, 128, 0.6);
+  --background-dark: rgba(0, 0, 0, 0.85);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-dark);
+}
+
+.restaurant-name {
+  color: var(--font-color);
+  letter-spacing: 0.5rem;
+}
+
+.nav-bar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem 0 5rem;
+  background-color: var(--background-light);
+}
+
+.button-nav {
+  color: var(--font-color-dark);
+  border: none;
+  background-color: transparent;
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+
+.button-nav:hover {
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+
+.button-nav.active {
+  border-bottom: 2px solid var(--font-color-dark);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: var(--background-light);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+}
+
+.welcome-message {
+  font-size: 4rem;
+}
+
+.feast-gif {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.last-paragraph {
+  background-color: inherit;
+  padding-top: 2rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-dark);
+  bottom: 0;
+  height: 4vh;
+  width: 100vw;
+}
+
+.git-name {
+  color: var(--font-color);
+  height: auto;
+  width: auto;
+  padding-right: 0.5rem;
+  text-decoration: none;
+}
+
+.git-logo {
+  width: 1.2rem;
+  height: 1.2rem;
+  color:  white;
+}
