@@ -79,24 +79,26 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 60%;
   height: auto;
 }
 
 .welcome-message {
-  font-size: 4rem;
+  padding-top: 2rem;
+  font-size: 3rem;
 }
 
 .feast-gif {
-  padding-top: 2rem;
+  padding-top: 3rem;
   width: 100%;
 }
 
 .last-paragraph {
   background-color: inherit;
-  padding-top: 2rem;
+  padding: 5rem 0 3rem 0;
   font-size: 2rem;
   width: 100%;
+  line-height: 5rem;
 }
 
 footer {
@@ -142,6 +144,7 @@ footer {
   height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .menu-item:hover {
