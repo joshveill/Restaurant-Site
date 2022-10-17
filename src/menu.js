@@ -1,5 +1,4 @@
 function createMenu() {
-  
   const menuContainer = document.createElement("div");
   menuContainer.classList.add("menu-container");
 
@@ -12,15 +11,29 @@ function createMenu() {
 
   menuContainer.appendChild(
     makeMenuItem(
-      "Salmon Nigiri",
-      "Hand rolled salmon and fish roe sushi served with soy sauce"
+      "Howls Breakfeast",
+      "Wonderful bacon and eggs from Howl's moving castle"
     )
   );
 
   menuContainer.appendChild(
     makeMenuItem(
-      "Salmon Nigiri",
-      "Hand rolled salmon and fish roe sushi served with soy sauce"
+      "Chicken Karaage",
+      "Delicious chicken cooked Japanese style with an in-house curry made with local ingredients"
+    )
+  );
+
+  menuContainer.appendChild(
+    makeMenuItem(
+      "Ichiraku's Ramen",
+      "Delicous steaming ramen made from Japan's most famous ramen shop, Ichiraku!"
+    )
+  );
+
+  menuContainer.appendChild(
+    makeMenuItem(
+      "Hot Pot",
+      "Authentic hot pot straight from One Punch Man's universe, guaranteed to satisfy your cold heart!"
     )
   );
 
@@ -28,7 +41,6 @@ function createMenu() {
 }
 
 function makeMenuItem(foodItem, description) {
-
   const menuItem = document.createElement("div");
   menuItem.classList.add("menu-item");
 
@@ -52,7 +64,6 @@ function makeMenuItem(foodItem, description) {
 }
 
 function loadMenu() {
-  
   const main = document.getElementById("main");
   main.textContent = "";
 
